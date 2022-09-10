@@ -1,19 +1,19 @@
 initial_object = {
-    "laundry": [{
+    "water_sources": [{
+        "area": "laundry",
         "tap": 0,
         "washing_machine": 0,
-    }],
-    "kitchen": [{
-        "tap": 0,
+    }, {
+        "area": "kitchen",
         "dish_washer": 0,
         "ice_machine": 0,
-    }],
-    "bathroom": [{
+    }, {
+        "area": "bathroom",
         "toilet": 0,
         "shower": 0,
         "sink": 0,
-    }],
-    "ensuite_bathroom": [{
+    }, {
+        "area": "ensuite_bathroom",
         "toilet": 0,
         "shower": 0,
         "sink": 0,
