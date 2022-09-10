@@ -2,7 +2,7 @@ initial_object = {
     "users": [{
         "id": 1,
         "name": "chris",
-        "individual_limit": 0,
+        "overall_limit": 0,
     }]
 }
 
