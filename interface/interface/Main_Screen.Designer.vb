@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class Main_Screen
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -28,6 +28,7 @@ Partial Class Form1
         Me.Options = New System.Windows.Forms.Button()
         Me.TotUseLabel = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.LimitLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Limit
@@ -60,28 +61,38 @@ Partial Class Form1
         'TotUseLabel
         '
         Me.TotUseLabel.AutoSize = True
-        Me.TotUseLabel.Location = New System.Drawing.Point(338, 39)
+        Me.TotUseLabel.Location = New System.Drawing.Point(175, 42)
         Me.TotUseLabel.Name = "TotUseLabel"
-        Me.TotUseLabel.Size = New System.Drawing.Size(113, 12)
+        Me.TotUseLabel.Size = New System.Drawing.Size(137, 12)
         Me.TotUseLabel.TabIndex = 3
-        Me.TotUseLabel.Text = "Total Water Usage:"
+        Me.TotUseLabel.Text = "Total Water Usage: (L)"
         '
         'Timer1
         '
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 300000
         '
-        'Form1
+        'LimitLabel
+        '
+        Me.LimitLabel.AutoSize = True
+        Me.LimitLabel.Location = New System.Drawing.Point(532, 42)
+        Me.LimitLabel.Name = "LimitLabel"
+        Me.LimitLabel.Size = New System.Drawing.Size(65, 12)
+        Me.LimitLabel.TabIndex = 4
+        Me.LimitLabel.Text = "Limit: (L)"
+        '
+        'Main_Screen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.LimitLabel)
         Me.Controls.Add(Me.TotUseLabel)
         Me.Controls.Add(Me.Options)
         Me.Controls.Add(Me.Usage)
         Me.Controls.Add(Me.Limit)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "Main_Screen"
+        Me.Text = "Water Usage Tracker"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -92,4 +103,5 @@ Partial Class Form1
     Friend WithEvents Options As Button
     Friend WithEvents TotUseLabel As Label
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents LimitLabel As Label
 End Class
