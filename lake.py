@@ -1,0 +1,3 @@
+def lake():
+    return { int }
+
