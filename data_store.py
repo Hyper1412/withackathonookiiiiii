@@ -1,9 +1,25 @@
 initial_object = {
-    "users": [{
-        "id": 1,
-        "name": "chris",
-        "overall_limit": 0,
-    }]
+    "laundry": [{
+        "tap": 0,
+        "washing_machine": 0,
+    }],
+    "kitchen": [{
+        "tap": 0,
+        "dish_washer": 0,
+        "ice_machine": 0,
+    }],
+    "bathroom": [{
+        "toilet": 0,
+        "shower": 0,
+        "sink": 0,
+    }],
+    "ensuite_bathroom": [{
+        "toilet": 0,
+        "shower": 0,
+        "sink": 0,
+    }],
+    "overall_limit": None,
+    "price_kl": 2.35,
 }
 
 
