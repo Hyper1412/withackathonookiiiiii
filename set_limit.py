@@ -1,8 +1,5 @@
-from data_store import Datastore
-
-store = Datastore.get()
+import data_store
 
 def set_limit(limit):
-    store["overall_limit"] = int(limit)
-    Datastore.set(store)
+    data_store.inital_object["overall_limit"] = int(limit)
     return
