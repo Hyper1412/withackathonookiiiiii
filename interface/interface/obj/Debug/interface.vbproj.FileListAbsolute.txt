@@ -1,0 +1,13 @@
+Y:\Desktop\hackathon\withackathonookiiiiii\interface\interface\bin\Debug\interface.exe.config
+Y:\Desktop\hackathon\withackathonookiiiiii\interface\interface\bin\Debug\interface.exe
+Y:\Desktop\hackathon\withackathonookiiiiii\interface\interface\bin\Debug\interface.pdb
+Y:\Desktop\hackathon\withackathonookiiiiii\interface\interface\bin\Debug\interface.xml
+Y:\Desktop\hackathon\withackathonookiiiiii\interface\interface\obj\Debug\interface.vbprojAssemblyReference.cache
+Y:\Desktop\hackathon\withackathonookiiiiii\interface\interface\obj\Debug\interface.Limit_Screen.resources
+Y:\Desktop\hackathon\withackathonookiiiiii\interface\interface\obj\Debug\interface.Resources.resources
+Y:\Desktop\hackathon\withackathonookiiiiii\interface\interface\obj\Debug\interface.vbproj.GenerateResource.cache
+Y:\Desktop\hackathon\withackathonookiiiiii\interface\interface\obj\Debug\interface.exe
+Y:\Desktop\hackathon\withackathonookiiiiii\interface\interface\obj\Debug\interface.xml
+Y:\Desktop\hackathon\withackathonookiiiiii\interface\interface\obj\Debug\interface.pdb
+Y:\Desktop\hackathon\withackathonookiiiiii\interface\interface\obj\Debug\interface.Main_Screen.resources
+Y:\Desktop\hackathon\withackathonookiiiiii\interface\interface\obj\Debug\interface.Usage_Screen.resources
