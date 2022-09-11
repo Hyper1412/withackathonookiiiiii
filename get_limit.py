@@ -1,7 +1,7 @@
-from data_store import Datastore
-
-store = Datastore.get()
+import data_store
 
 def get_limit():
-    print(store["overall_limit"])
-    return store["overall_limit"]
+    print(data_store.initial_object["overall_limit"])
+    return data_store.initial_object["overall_limit"]
+
+get_limit()
