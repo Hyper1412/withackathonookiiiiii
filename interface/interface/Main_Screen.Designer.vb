@@ -25,38 +25,30 @@ Partial Class Main_Screen
         Me.components = New System.ComponentModel.Container()
         Me.Limit = New System.Windows.Forms.Button()
         Me.Usage = New System.Windows.Forms.Button()
-        Me.Options = New System.Windows.Forms.Button()
         Me.TotUseLabel = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.LimitLabel = New System.Windows.Forms.Label()
+        Me.Main_Update_Timer = New System.Windows.Forms.Timer(Me.components)
+        Me.Limit_Label = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Limit
         '
-        Me.Limit.Location = New System.Drawing.Point(304, 368)
+        Me.Limit.Location = New System.Drawing.Point(499, 360)
         Me.Limit.Name = "Limit"
         Me.Limit.Size = New System.Drawing.Size(186, 39)
         Me.Limit.TabIndex = 0
-        Me.Limit.Text = "Set Limit"
+        Me.Limit.Text = "Water Limit"
         Me.Limit.UseVisualStyleBackColor = True
         '
         'Usage
         '
-        Me.Usage.Location = New System.Drawing.Point(87, 376)
+        Me.Usage.Location = New System.Drawing.Point(122, 360)
         Me.Usage.Name = "Usage"
-        Me.Usage.Size = New System.Drawing.Size(107, 23)
+        Me.Usage.Size = New System.Drawing.Size(190, 39)
         Me.Usage.TabIndex = 1
         Me.Usage.Text = "Water Usage"
         Me.Usage.UseVisualStyleBackColor = True
-        '
-        'Options
-        '
-        Me.Options.Location = New System.Drawing.Point(617, 376)
-        Me.Options.Name = "Options"
-        Me.Options.Size = New System.Drawing.Size(90, 23)
-        Me.Options.TabIndex = 2
-        Me.Options.Text = "Preferences"
-        Me.Options.UseVisualStyleBackColor = True
         '
         'TotUseLabel
         '
@@ -67,32 +59,42 @@ Partial Class Main_Screen
         Me.TotUseLabel.TabIndex = 3
         Me.TotUseLabel.Text = "Total Water Usage: (L)"
         '
-        'Timer1
+        'Main_Update_Timer
         '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 300000
+        Me.Main_Update_Timer.Enabled = True
+        Me.Main_Update_Timer.Interval = 3000
         '
-        'LimitLabel
+        'Limit_Label
         '
-        Me.LimitLabel.AutoSize = True
-        Me.LimitLabel.Location = New System.Drawing.Point(532, 42)
-        Me.LimitLabel.Name = "LimitLabel"
-        Me.LimitLabel.Size = New System.Drawing.Size(65, 12)
-        Me.LimitLabel.TabIndex = 4
-        Me.LimitLabel.Text = "Limit: (L)"
+        Me.Limit_Label.AutoSize = True
+        Me.Limit_Label.Location = New System.Drawing.Point(532, 42)
+        Me.Limit_Label.Name = "Limit_Label"
+        Me.Limit_Label.Size = New System.Drawing.Size(65, 12)
+        Me.Limit_Label.TabIndex = 4
+        Me.Limit_Label.Text = "Limit: (L)"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.[interface].My.Resources.Resources.Group_1
+        Me.PictureBox1.Location = New System.Drawing.Point(241, 103)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(356, 201)
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
         '
         'Main_Screen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.LimitLabel)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Limit_Label)
         Me.Controls.Add(Me.TotUseLabel)
-        Me.Controls.Add(Me.Options)
         Me.Controls.Add(Me.Usage)
         Me.Controls.Add(Me.Limit)
         Me.Name = "Main_Screen"
         Me.Text = "Water Usage Tracker"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -100,8 +102,8 @@ Partial Class Main_Screen
 
     Friend WithEvents Limit As Button
     Friend WithEvents Usage As Button
-    Friend WithEvents Options As Button
     Friend WithEvents TotUseLabel As Label
-    Friend WithEvents Timer1 As Timer
-    Friend WithEvents LimitLabel As Label
+    Friend WithEvents Main_Update_Timer As Timer
+    Friend WithEvents Limit_Label As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

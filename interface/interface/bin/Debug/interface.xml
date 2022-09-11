@@ -22,5 +22,20 @@ interface
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:interface.My.Resources.Resources.Group_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:interface.My.Resources.Resources.Group_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:interface.My.Resources.Resources.Union">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

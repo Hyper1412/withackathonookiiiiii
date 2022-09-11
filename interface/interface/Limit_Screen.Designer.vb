@@ -23,34 +23,34 @@ Partial Class Limit_Screen
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Set_Button = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Return_Button = New System.Windows.Forms.Button()
         Me.City = New System.Windows.Forms.ComboBox()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'NumericUpDown1
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(223, 147)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(196, 148)
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(120, 21)
         Me.NumericUpDown1.TabIndex = 1
         '
-        'Button1
+        'Set_Button
         '
-        Me.Button1.Location = New System.Drawing.Point(348, 284)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Set"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Set_Button.Location = New System.Drawing.Point(348, 284)
+        Me.Set_Button.Name = "Set_Button"
+        Me.Set_Button.Size = New System.Drawing.Size(75, 23)
+        Me.Set_Button.TabIndex = 2
+        Me.Set_Button.Text = "Set"
+        Me.Set_Button.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(221, 72)
+        Me.Label1.Location = New System.Drawing.Point(210, 72)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(95, 12)
         Me.Label1.TabIndex = 3
@@ -65,19 +65,19 @@ Partial Class Limit_Screen
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Estimated_Price: "
         '
-        'Button2
+        'Return_Button
         '
-        Me.Button2.Location = New System.Drawing.Point(315, 363)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(147, 35)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Return to Main Menu"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Return_Button.Location = New System.Drawing.Point(315, 363)
+        Me.Return_Button.Name = "Return_Button"
+        Me.Return_Button.Size = New System.Drawing.Size(147, 35)
+        Me.Return_Button.TabIndex = 5
+        Me.Return_Button.Text = "Return to Main Menu"
+        Me.Return_Button.UseVisualStyleBackColor = True
         '
         'City
         '
         Me.City.FormattingEnabled = True
-        Me.City.Location = New System.Drawing.Point(510, 147)
+        Me.City.Location = New System.Drawing.Point(494, 148)
         Me.City.Name = "City"
         Me.City.Size = New System.Drawing.Size(121, 20)
         Me.City.TabIndex = 6
@@ -88,10 +88,10 @@ Partial Class Limit_Screen
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.City)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Return_Button)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Set_Button)
         Me.Controls.Add(Me.NumericUpDown1)
         Me.Name = "Limit_Screen"
         Me.Text = "Usage Limit"
@@ -102,9 +102,9 @@ Partial Class Limit_Screen
     End Sub
 
     Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Set_Button As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Return_Button As Button
     Friend WithEvents City As ComboBox
 End Class

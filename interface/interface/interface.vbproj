@@ -73,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="all_modules.vb" />
     <Compile Include="Main_Screen.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +143,15 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Group_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Group_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Union.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
