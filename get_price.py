@@ -1,7 +1,4 @@
 import calc_total_water_usage
-from data_store import Datastore
-
-store = Datastore.get()
 
 def get_price():
     # might gotta convert price to per litre
