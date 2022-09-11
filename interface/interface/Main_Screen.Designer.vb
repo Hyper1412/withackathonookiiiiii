@@ -28,8 +28,8 @@ Partial Class Main_Screen
         Me.TotUseLabel = New System.Windows.Forms.Label()
         Me.Main_Update_Timer = New System.Windows.Forms.Timer(Me.components)
         Me.Limit_Label = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Lake_Image = New System.Windows.Forms.PictureBox()
+        CType(Me.Lake_Image, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Limit
@@ -62,7 +62,7 @@ Partial Class Main_Screen
         'Main_Update_Timer
         '
         Me.Main_Update_Timer.Enabled = True
-        Me.Main_Update_Timer.Interval = 3000
+        Me.Main_Update_Timer.Interval = 300000
         '
         'Limit_Label
         '
@@ -73,28 +73,28 @@ Partial Class Main_Screen
         Me.Limit_Label.TabIndex = 4
         Me.Limit_Label.Text = "Limit: (L)"
         '
-        'PictureBox1
+        'Lake_Image
         '
-        Me.PictureBox1.Image = Global.[interface].My.Resources.Resources.Group_1
-        Me.PictureBox1.Location = New System.Drawing.Point(241, 103)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(356, 201)
-        Me.PictureBox1.TabIndex = 5
-        Me.PictureBox1.TabStop = False
+        Me.Lake_Image.Image = Global.[interface].My.Resources.Resources.Group_1
+        Me.Lake_Image.Location = New System.Drawing.Point(241, 103)
+        Me.Lake_Image.Name = "Lake_Image"
+        Me.Lake_Image.Size = New System.Drawing.Size(356, 201)
+        Me.Lake_Image.TabIndex = 5
+        Me.Lake_Image.TabStop = False
         '
         'Main_Screen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Lake_Image)
         Me.Controls.Add(Me.Limit_Label)
         Me.Controls.Add(Me.TotUseLabel)
         Me.Controls.Add(Me.Usage)
         Me.Controls.Add(Me.Limit)
         Me.Name = "Main_Screen"
         Me.Text = "Water Usage Tracker"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Lake_Image, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -105,5 +105,5 @@ Partial Class Main_Screen
     Friend WithEvents TotUseLabel As Label
     Friend WithEvents Main_Update_Timer As Timer
     Friend WithEvents Limit_Label As Label
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Lake_Image As PictureBox
 End Class

@@ -59,7 +59,7 @@ Partial Class Limit_Screen
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(508, 72)
+        Me.Label2.Location = New System.Drawing.Point(492, 72)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(107, 12)
         Me.Label2.TabIndex = 4
