@@ -2,6 +2,7 @@
 
     Dim p1 As Process = New Process
     Dim p2 As Process = New Process
+    Dim p3 As Process = New Process
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -50,16 +51,39 @@
 
     End Sub
 
-    Private Sub Options_Click(sender As Object, e As EventArgs)
-
-        Options_Screen.Show()
-        Me.Hide()
-
-    End Sub
-
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Main_Update_Timer.Tick
 
+        p1.StartInfo.Arguments = "calc_total_water_usage.py"
+        p1.StartInfo.FileName = "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\python.exe"
+        p1.StartInfo.WindowStyle = ProcessWindowStyle.Hidden
+        p1.StartInfo.CreateNoWindow = True
+        p1.StartInfo.RedirectStandardOutput = True
+        p1.StartInfo.UseShellExecute = False
+        p1.Start()
+        AddHandler p1.OutputDataReceived, AddressOf proccess_ReturnValue1
+        p1.BeginOutputReadLine()
+        p1.WaitForExit()
 
+        TotUseLabel.Text = "Total Water Usage: " + Tot_Usage_Num + " (L)"
+        p1.CancelOutputRead()
+
+        p3.StartInfo.Arguments = "lake.py"
+        p3.StartInfo.FileName = "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\python.exe"
+        p3.StartInfo.WindowStyle = ProcessWindowStyle.Hidden
+        p3.StartInfo.CreateNoWindow = True
+        p3.StartInfo.RedirectStandardOutput = True
+        p3.StartInfo.UseShellExecute = False
+        p3.Start()
+        AddHandler p3.OutputDataReceived, AddressOf proccess_ReturnValue
+        p3.BeginOutputReadLine()
+        p3.WaitForExit()
+        p3.CancelOutputRead()
+
+        If Lake_Percent < 0 Then
+            Lake_Image.Image = My.Resources.Resources.Union
+        ElseIf Lake_Percent < 51 Then
+            Lake_Image.Image = My.Resources.Resources.Group_2
+        End If
 
     End Sub
 
